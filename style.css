@@ -74,20 +74,37 @@ img {
 /* PARTE MIA */
 
 @media screen and (max-width: 420px) {
+  #lezioni {
+    max-width: 100%;
+  }
+  #lezioni .row,
+  #lezioni .row .left,
+  #lezioni .row .right {
+    width: 100%;
+  }
+  #steps .row > .left,
+  #steps .row > .central,
+  #steps .row > .right {
+    float: left;
+    width: 100%;
+  }
   #lezioni .row {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #f2f2cd;
   }
-  .row div.left {
-    flex-basis: 100%;
-  }
   .row {
     margin: 0;
   }
   #steps .row {
     background-color: white;
+    width: 100%;
+  }
+
+  #why .row > div.second,
+  #why .row > div.third {
+    padding-top: 2rem;
   }
 
   #why .row > div.first,
@@ -96,9 +113,10 @@ img {
     margin: 0;
   }
   #why .row div hr {
+    margin: 10px 0;
     width: 80%;
     margin: auto;
-    height: 2px;
+    height: 1px;
     background-color: black;
     border: none;
   }
@@ -106,6 +124,9 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  #why .row {
+    width: 100%;
   }
 
   #why .row div {
